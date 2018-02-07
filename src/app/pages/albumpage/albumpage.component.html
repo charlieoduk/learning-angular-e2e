@@ -1,0 +1,22 @@
+<div class="navbar navbar-inverse bg-inverse">
+  <div class="container d-flex justify-content-between">
+    <a [routerLink]="['/home']" class="navbar-brand">Home</a>
+  </div>
+</div>
+<div class="album text-muted">
+  <div class="container">
+
+    <div class="row">
+      <div class="card" (click)="showModal(plane)" *ngFor="let plane of planes">
+        <img src="{{plane.imageUrl}}" class="img-fluid" alt="Card image cap">
+        <p class="card-text">{{plane.caption}}</p>
+      </div>
+    </div>
+    <app-modal [(visible)]="modal">
+      <img src="{{currentUrl}}" class="img-fluid" alt="Card image cap">
+      <h4>{{currentCaption}}</h4>
+      <p>{{currentDetails}}</p>
+    </app-modal>
+
+  </div>
+</div>
