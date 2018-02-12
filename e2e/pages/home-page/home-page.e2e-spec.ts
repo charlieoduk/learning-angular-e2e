@@ -1,3 +1,5 @@
+// e2e/pages/home-page/home-page.e2e-spec.ts
+
 import { browser } from 'protractor';
 import { HomePage } from './home-page.po';
 
@@ -35,4 +37,4 @@ describe(' Home Page', () => {
         learnMore.click();
         expect(browser.driver.getCurrentUrl()).toContain('/album');
     });
-})
+});

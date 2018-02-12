@@ -1,6 +1,6 @@
-import { browser, by, element, promise, ElementFinder, ElementArrayFinder } from 'protractor';
-import { Element } from '@angular/compiler';
+// e2e/pages/home-page/home-page.po.ts
 
+import { browser, by, element, promise, ElementFinder, ElementArrayFinder } from 'protractor';
 
 export class HomePage {
 
